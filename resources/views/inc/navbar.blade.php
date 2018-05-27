@@ -13,8 +13,11 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
+            <a class="nav-link" href="/posts">Blog</a>
           </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/posts/create">Post</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
           </li>
