@@ -12,11 +12,11 @@
 </div>
 
 
-<div class="media">
+<div class="card">
         <div class="media-left">
-          <img src="img_avatar1.png" class="media-object" style="width:60px">
+          <img src="/images/32.jpg" class="media-object" style="width:300px">
         </div>
-        <div class="media-body">
+        <div class="card-body">
           <h4 class="media-heading">John Doe</h4>
           <p>Lorem ipsum...</p>
         </div>
