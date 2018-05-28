@@ -12,19 +12,24 @@
                         <div class="shadow-sm p-3 mb-5 bg-white rounded">
                             <h3>{{$post->title}}</h3>
                             <p>{!!$post->body!!}</p>
-                        </div><small>Written on {{$post->created_at}}</small>
+                        </div>
+                        <small>Written on {{$post->created_at}}</small>
                     </div>
                 </div>
             </div>
 </br>
 @if(!auth::guest())
     @if(auth::user()->id == $post->user_id)
+    <div class="row">
+        <div class="col-1 col-offset-3">
   <a href="/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a>
-
-  {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right'])!!}
+        </div>
+    <div class="col">
+  {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST'])!!}
   {{form::hidden('_method', 'DELETE')}}
   {{Form::submit('Delete', ['class'=>'btn btn-secondary'])}}
   {!! Form::close() !!}
+    </div>
   @endif
   @endif
 @endsection
