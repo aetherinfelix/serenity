@@ -2,15 +2,41 @@
 
 @section('content')
     <div class="jumbotron">
-            <h1 class="display-4">Welcome to Serenity</h1>
-            <p class="lead">You can't take the sky from me</p>
+            <h1 class="display-4">Welcome to TheFatBeardedVegan.com</h1>
+            </br>
+            <p class="lead">The personal space of The Fat Bearded Vegan</p>
+            <p class="lead">Get to know me a little bit. This is a project page so it might change</p>
     </div>
     <div class="row">
-        <div class="col-md-8">
-            <p class="lead">This is where my text should go</p>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">About me</h5>
+                        <p class="card-test">This page gives a little bit more information about me</p>
+                        <a href="/about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <h3>Sidebar</h3>
+        <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog</h5>
+                            <p class="card-test">Here are some musings and words of wisdom from the village idiot.</p>
+                            <a href="/posts" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Me</h5>
+                                <p class="card-test">Here's a form so you can email me spam or nasty comments</p>
+                                <a href="/about" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     </div>
 
 @endsection
