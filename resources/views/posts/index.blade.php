@@ -14,16 +14,17 @@
                                  <div class="col-8">
                                     <div class="shadow-sm p-3 mb-5 bg-white rounded">
                                         <h3><a href="posts/{{$post->id}}" class="nav-link disabled">{{$post->title}}</a></h3>
-                                        <p>{!!$post->body!!}</p>
+																				<hr>
+                                        <p style="margin-left: 5%;">{!!$post->body!!}</p>
                                     </div><small>Written on {{$post->created_at}}</small>
                                 </div>
                             </div>
                         </div>
-                        @endforeach 
-                    {{$posts->links()}} 
+                        @endforeach
+                    {{$posts->links()}}
                 @else
             <p>No Posts Found</p>
-        @endif 
+        @endif
     @endsection
 </body>
 </html>
