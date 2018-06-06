@@ -14,7 +14,8 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/blog', 'PagesController@blog');
-Route::get('/contact', 'PagesController@contact');
+Route::get('/contact', 'PagesController@contact')->name('contact');;
+Route::post('/contact', 'PagesController@send');
 
 route::resource('posts', 'PostsController');
 
@@ -22,6 +23,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-/*
-Route::get('contact', 'ContactController@create')->name('contact.create');
-Route::post('contact', 'ContactController@store')->name('contact.store'); */
+
+

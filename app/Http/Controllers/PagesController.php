@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Mail;
+use App\Mail\CxForm;
 
 class PagesController extends Controller
 {
@@ -21,4 +23,16 @@ class PagesController extends Controller
     public function contact(){
         return view('pages.contact');
     }
+
+    public function sendcontact(Request $request)
+    {
+        //Send email
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required'
+        ]);
+
+        Mail::to('admin@example.com')->send(new CxForm());
+        }
 }
