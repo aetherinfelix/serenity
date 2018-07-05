@@ -15,7 +15,7 @@
                     @endif
 
                     <div class="panel-body">
-                        <a href="/posts/create" class="btn btn-secondary">Create Post</a>
+                        <a href="/posts/create" class="btn btn-primary">Create Post</a>
                     </br>
                 </br>
             </br>
@@ -32,11 +32,11 @@
                         @foreach($posts as $post)
                             <tr>
                                 <td>{{$post->title}}</td>
-                                <td><a href="/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a></td>
+                                <td><a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a></td>
                                 <td>
                                         {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right'])!!}
                                         {{form::hidden('_method', 'DELETE')}}
-                                        {{Form::submit('Delete', ['class'=>'btn btn-secondary'])}}
+                                        {{Form::submit('Delete', ['class'=>'btn btn-primary'])}}
                                         {!! Form::close() !!}
                                 </td>
                             </tr>

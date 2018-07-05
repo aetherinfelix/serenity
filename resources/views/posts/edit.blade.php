@@ -16,6 +16,6 @@
                 {{Form::file('cover_image')}}
         </div>
     {{form::hidden('_method', 'PUT')}}
-    {{Form::submit('Submit', ['class'=>'btn btn-secondary'])}}
+    {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
 {!! Form::close() !!}
 @endsection

@@ -5,12 +5,12 @@
   {{ csrf_field() }}
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name"  aria-describedby="nameHelp" placeholder="Name">
+      <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Name">
       <small id="nameHelp" class="form-text text-muted">Just so I know what to call you.</small>
     </div>
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="text" class="form-control" id="email"  aria-describedby="emailHelp" placeholder="Email">
+      <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email">
       <small id="nameHelp" class="form-text text-muted">We will never reveal your email address to anybody.</small>
     </div>
     <div class="form-group">
@@ -23,8 +23,8 @@
       </div>
     <div class="form-group">
         <label for="message">Message</label>
-        <textarea class="form-control" id="message" rows="5"></textarea>
+        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
     </br>
-        <button type="submit" class="btn btn-secondary" value="Send Email">Submit</button>
+        <button type="submit" class="btn btn-primary" value="Send Email">Submit</button>
 </form>
 @endsection
