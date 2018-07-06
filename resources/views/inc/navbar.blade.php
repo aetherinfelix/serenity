@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
 		<div class="container">
 			<img src="/images/veganlogo.png" class="img-thiumbnail" style="width:100px;height:100px;" alt="Vegan Logo">&nbsp;&nbsp;
 			<a class="navbar-brand" href="/">The Fat Bearded Vegan</a> <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>

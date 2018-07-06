@@ -1,9 +1,9 @@
 @extends('layout.app')
 
 @section('content')
-<div class="shadow-sm p-3 mb-5 bg-white rounded"><h1>Meet The Fat Bearded Vegan</h1></div>
-<div class="shadow-sm p-3 mb-5 bg-white rounded">
-<div class="media">
+<div class="shadow-lg p-3 mb-5 bg-white rounded"><h1 class="text-center">Meet The Fat Bearded Vegan</h1></div>
+<div class="shadow-lg p-3 mb-5 bg-white rounded">
+<div class="media shadow-sm">
         <img class="align-self-center mr-3 rounded" src="images/321.jpg" alt="Generic placeholder image">
         <div class="media-body">
           <h5 class="mt-0">About me</h5>
