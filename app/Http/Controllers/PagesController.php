@@ -43,19 +43,14 @@ class PagesController extends Controller
             'bodyMessage' => $request->message,
             'love' => $request->love
         );
-            if($request['love'] !== 'fan'){
+        
         
 
         Mail::send('emails.email', $data, function($message) use ($data){
             $message->from($data['email']);
             $message->to('mmattini@icloud.com');
-        });}
-        else{
-
-        Mail::send('emails.email2', $data, function($message) use ($data){
-            $message->from($data['email']);
-            $message->to('mmattini@icloud.com');
-        });}
+        });
+       
 
         
 

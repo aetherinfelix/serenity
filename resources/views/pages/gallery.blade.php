@@ -1,6 +1,7 @@
 @extends('layout.app')
 
 @section('content')
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -8,18 +9,18 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner text-center">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="images/gallery/img1_wide.jpg" alt="First slide">
+            <img class="d-block rounded w-80 h-auto"x src="images/gallery/img1.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/gallery/img2_wide.jpg" alt="Second slide">
+            <img class="d-block rounded w-80 h-auto" src="images/gallery/img2.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="images/gallery/img3_wide.jpg" alt="Third slide">
+            <img class="d-block rounded w-80 h-auto" src="images/gallery/img3.jpg" alt="Third slide">
           </div>
           <div class="carousel-item">
-                <img class="d-block w-100" src="images/gallery/img4_wide.jpg" alt="Fourth slide">
+                <img class="d-block rounded w-80 h-auto" src="images/gallery/img4.jpg" alt="Fourth slide">
               </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -31,4 +32,5 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    
 @endsection
